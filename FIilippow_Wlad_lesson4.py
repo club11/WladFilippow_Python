@@ -1,5 +1,5 @@
 '''
-при введении 0 bool не возвращает False???????????
+wake the f#k up, samurai, we have some tasks to do 
 '''
 
 
@@ -7,25 +7,26 @@ num1 = int(input('Введите первое значение:\n'))
 num2 = int(input('Введите второе значение:\n'))
 num3 = int(input('Введите третее значение:\n'))
 # Task1. Если нет ни одого нуля - вывести: "Нет нулевых значений!!!"(Без if - использовать лень)
-check = bool(num1 and num2 and num3)           # косяк - почему при введении 0 bool не возвращает False???????????
+check = bool(num1 and num2 and num3)  
 if check == True:
     print('нет нулевых значений')
 
 # Task 2. Вывести первое ненулевое значение. Если введены все нули - вывести "Введены все нули!" (цикл не использовать) без if - использовать лень   
 x = num1 or num2 or num3
-if x == True:
-    print(x)
-else:
+if x == False:
     print('введены все нулевые значения')
+else:
+    print('первое ненулевое значение:\n',x)
 
 # Task 3. Если первое значение больше чем сумма второго и третьего вывести a - b - c
 if num1 > (num2 + num3):
-    print(num1 - num2 - num3)
+    print('a - b - c:\n:', num1 - num2 - num3)
 # Task 4. Если первое значение меньше чем сумма второго и третьего вывести b + c - a
 else:
-    print(num1 + num2 - num3)
+    print('b + c - a\n:', num3 + num2 - num1)
 # Task 5. Если первое значение больше 50 и при этом одно из оставшихся значение больше первого вывести "Вася"
 if num1 > 50 and num2 > num1 or num1 > 50 and num3 > num1: 
-    print('Вася')
-if num1 > 5 or num2 == num3  == 7:
-    print('Петя')
+    print('b or c > a > 50\n:', 'Вася')
+ # Task 6.Если первое значение больше 5 или оба из оставшихся значений равны 7 вывести "Петя"
+if num1 > 5 or num2 == 7 and num3  == 7:
+    print('a >5 or b == c == 7\n:', 'Петя')
