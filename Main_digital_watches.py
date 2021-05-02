@@ -1,5 +1,9 @@
 from watch_numbers import numbers
-from watch_functions import current_time, time_position_detecter, position_to_number, string_assmbler, string_show_screen 
+from watch_functions import current_time, time_position_detecter, position_to_number, point_generator, string_assmbler, string_show_screen, generated_dot
+import datetime, os, time
+
+
+
 
 
 
@@ -12,6 +16,5 @@ def main():
         show_strings = string_assmbler(watch_numbers)
         string_show_screen(show_strings)            #печатаем строку
         
-
 
 main()
